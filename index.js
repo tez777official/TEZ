@@ -173,24 +173,24 @@ cron.schedule("0 0 0 * * *", () => {
   const exampleEmbed = new EmbedBuilder()
     .setColor("#010066")
     .setDescription(
-      `笑ちゃんねるが${moment().format("MM")}月${moment().format(
+      `レーマス俱楽部が${moment().format("MM")}月${moment().format(
         "D"
       )}日午前0時をお知らせします\n⊂二二二（　＾ω＾）二⊃ﾌﾞｰﾝ`
     );
   client.channels.cache
-    .get("1057482565256216628")
+    .get("1280096066540142632")
     .send({ embeds: [exampleEmbed] });
 });
 cron.schedule("0 0 12 * * *", () => {
   const exampleEmbed = new EmbedBuilder()
     .setColor("#010066")
     .setDescription(
-      `笑ちゃんねるが${moment().format("MM")}月${moment().format(
+      `レーマス俱楽部が${moment().format("MM")}月${moment().format(
         "D"
       )}日午前12時をお知らせします\n⊂二二二（　＾ω＾）二⊃ﾌﾞｰﾝ`
     );
   client.channels.cache
-    .get("1057482565256216628")
+    .get("1280096066540142632")
     .send({ embeds: [exampleEmbed] });
 });
 
@@ -200,7 +200,7 @@ client.on("messageCreate", async (message) => {
       .setColor(0x0099ff)
       .setTitle("メンバーバックアップ")
       .setDescription(
-        "万が一当鯖が誤BANなどがされてしまった場合に、<@1066658936708669531>からDMで後続サーバーのURLを受け取るように設定することができます。\n\n「滞在時のみ有効に設定」で、当鯖から退出された際に自動で解除されるようにできます。\n※BOTからDMを受け取れるようになっている必用があります。設定方法は[こちら(外部リンク)](https://support.discord.com/hc/ja/articles/115000068672-Discord%E3%82%BB%E3%83%BC%E3%83%95%E3%83%86%E3%82%A3%E3%83%BC-%E5%AE%89%E5%85%A8%E3%81%AA%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8-)"
+        "万が一当鯖が誤BANなどがされてしまった場合に、<@1354340586101936179>からDMで後続サーバーのURLを受け取るように設定することができます。\n\n「滞在時のみ有効に設定」で、当鯖から退出された際に自動で解除されるようにできます。\n※BOTからDMを受け取れるようになっている必用があります。設定方法は[こちら(外部リンク)](https://support.discord.com/hc/ja/articles/115000068672-Discord%E3%82%BB%E3%83%BC%E3%83%95%E3%83%86%E3%82%A3%E3%83%BC-%E5%AE%89%E5%85%A8%E3%81%AA%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8-)"
       );
     const backupMemberButtonA = new ButtonBuilder()
       .setCustomId("backupMemberButtonA")
@@ -223,7 +223,7 @@ client.on("messageCreate", async (message) => {
       components: [row],
     });
   }
-  if (message.channel.id === "1074103147137609728") {
+  if (message.channel.id === "1292839467312349236") {
     if (message.author.bot) return;
     const HIROYKI_C_1 = new WebhookClient({
       url: "https://discord.com/api/webhooks/1092313918396977152/jy634XoltOQp6mP63vr4hjjAheij_lNw7FcVO9xd4N9qH98PWilUMp9onEpPbZKhmTp7",
@@ -271,7 +271,7 @@ client.on("messageCreate", async (message) => {
   if (message.content === prefix + "test") {
     message.channel.send("hey!");
   }
-  if (message.channel.id === "1067838934865948763") {
+  if (message.channel.id === "1356625923872391299") {
     if (message.author.bot || message.author.system) return;
     message.startThread({
       name: `${message.content}`,
@@ -307,7 +307,7 @@ client.on("messageCreate", async (message) => {
       }
     });
   }
-  if (message.channel.id === "1061070266886803586") {
+  if (message.channel.id === "1356625923872391299") {
     if (message.author.id === "1092078302765789254") {
       keyv.get("AC_count").then((AC_count) => {
         fs.appendFile(
@@ -370,7 +370,7 @@ client.on("messageCreate", async (message) => {
         let match;
         while ((match = regex.exec(embed.title)) !== null) {
           function_AC_send(
-            `[>>${match[1]}](https://discord.com/channels/1056948917633286214/1061070266886803586/${repliedMessage.id})\n` +
+            `[>>${match[1]}](https://discord.com/channels/1280086194776047627/1356625923872391299/${repliedMessage.id})\n` +
               message.content
           );
         }
@@ -383,7 +383,7 @@ client.on("messageCreate", async (message) => {
               if (line.startsWith(n.toString())) {
                 let index = line.indexOf(":");
                 let repliedMessageID = line.slice(index + 1);
-                return `[>>${n}](https://discord.com/channels/1056948917633286214/1061070266886803586/${repliedMessageID})`;
+                return `[>>${n}](https://discord.com/channels/1280086194776047627/1356625923872391299/${repliedMessageID})`;
               }
             }
           }
@@ -423,7 +423,7 @@ client.on("messageCreate", async (message) => {
       ],
     });
   }
-  if (message.channel.id === "1067838934865948763") {
+  if (message.channel.id === "1280096066540142632") {
     if (message.author.bot || message.author.system) return;
     message.startThread({
       name: `${message.content}`,
@@ -473,7 +473,7 @@ client.on("messageCreate", async (message) => {
       return;
     }
     */
-    if (message.channel.id === "1057482565256216628") {
+    if (message.channel.id === "1280096066540142632") {
       message.reply({
         content: "ほかのちゃんねるでやってね",
         allowedMentions: { repliedUser: false },
@@ -513,9 +513,9 @@ client.on("messageCreate", async (message) => {
           `消しゴム`,
           `サングラス`,
           `メガネ`,
-          `虫眼鏡`,
-          `2ch`,
-          `5ch`,
+          `ガソリン`,
+          `日本車`,
+          `外車`,
           `カップラーメン`,
           `エナジードリンク`,
           `[てず](https://discord.com/users/1002151638028525599)`,
@@ -524,7 +524,7 @@ client.on("messageCreate", async (message) => {
           `オランジーナ`,
           `箱ティッシュ`,
           `ハッピーターン`,
-          `（笑）ちゃんねる`,
+          `レーマス俱楽部`,
           `ラーメン`,
           `大麻グミ`,
         ];
@@ -789,7 +789,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
               if (line.startsWith(n.toString())) {
                 let index = line.indexOf(":");
                 let repliedMessageID = line.slice(index + 1);
-                return `[>>${n}](https://discord.com/channels/1056948917633286214/1061070266886803586/${repliedMessageID})`;
+                return `[>>${n}](https://discord.com/channels/1280086194776047627/1356625923872391299/${repliedMessageID})`;
               }
             }
           }
@@ -902,7 +902,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
             if (line.startsWith(n.toString())) {
               let index = line.indexOf(":");
               let repliedMessageID = line.slice(index + 1);
-              return `[>>${n}](https://discord.com/channels/1056948917633286214/1061070266886803586/${repliedMessageID})`;
+              return `[>>${n}](https://discord.com/channels/1280086194776047627/1356625923872391299/${repliedMessageID})`;
             }
           }
         }
@@ -979,7 +979,7 @@ client.on("messageCreate", async (message) => {
     );
   }
   if (message.content === prefix + "jgl") {
-    if (message.author.id != "777466773955936266") return;
+    if (message.author.id != "1339891638725513258") return;
     const guildList = client.guilds.cache.map(
       (guild) => `${guild.name}\n└>${guild.id}`
     );
@@ -996,7 +996,7 @@ client.on("messageCreate", async (message) => {
 const userMap = new Map();
 
 client.on("messageCreate", (message) => {
-  if (message.author.id !== "777466773955936266") return;
+  if (message.author.id !== "1339891638725513258") return;
   if (userMap.has(message.author.id)) {
     const userData = userMap.get(message.author.id);
     const { lastMessage, timer } = userData;
@@ -1008,7 +1008,7 @@ client.on("messageCreate", (message) => {
       if (userData.warns > 2) {
         message.channel
           .send({
-            content: "<@777466773955936266>勉強しろあほ",
+            content: "<@1339891638725513258>勉強しろあほ",
             flags: [4096],
           })
           .then((msg) => {
