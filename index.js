@@ -473,7 +473,7 @@ client.on("messageCreate", async (message) => {
       return;
     }
     */
-    if (message.channel.id === "1280096066540142632") {
+    if (message.channel.id === "1280096287525699654") {
       message.reply({
         content: "ほかのちゃんねるでやってね",
         allowedMentions: { repliedUser: false },
